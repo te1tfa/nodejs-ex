@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mod_express = express();
 
 var port    = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+var address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 // Inicialización del servidor web
 var server = mod_express.listen(port, address,
