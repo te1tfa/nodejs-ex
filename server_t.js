@@ -31,7 +31,7 @@ mod_express.use(express.static(process.cwd() + '/www'));
 // ***************************************************************************
 mod_express.get('/PetitionPath', function (req, res)
 {
-  var str = "GET: PetitionPath" + 
+  var str = "GET: PetitionPath TOMAS" + 
             "-->" + req.url +
             "-->" + JSON.stringify(req.query); 
 	res.send(str);
